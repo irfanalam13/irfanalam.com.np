@@ -1,0 +1,53 @@
+
+/* ========================= Projects Section ========================= */
+.projects-section {
+  background: #952ac0; 
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projects-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(243, 24, 108, 0.3);
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e41616;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.project-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(2,6,23,0.08);
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-card-content {
+  padding: 1rem;
+}
+.project-card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.project-card-content p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
